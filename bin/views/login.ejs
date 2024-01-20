@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    
+</head>
+
+<body>
+    <form action="/login" method="post" autocomplete="off">
+        <h2>Login</h2>
+        <div class="inputBox" >
+            <input type="text" name="username"  required>
+            <label for="username">Username</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" id="password" required>
+            <label>Password</label>
+            <img src="/images/hide.png" id="eye">
+        </div>
+        <div class="inputBox">
+            <input type="submit" required>
+        </div>
+        <p>Phirse Account banana hai? <a href="register">Sign Up</a></p>
+    </form>
+    <script src="/javascripts/loginPage.js"></script>
+</body>
+
+</html>

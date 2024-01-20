@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/ca4ae39440.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="err_msg">
+    <!-- register.ejs -->
+    <% if (messages.error) { %>
+        <div id="errorShow" class="alert alert-danger" style="background-color: aliceblue; height: 50px;
+  border-radius: 10px; width: 100%; padding: 2%; align-items: center; text-align: center; display: flex; justify-content: center; ">
+            <%= messages.error %>
+        </div>
+        <% } else { %>
+        <div id="noError" class="alert alert-success"
+            style="background-color: aliceblue; height: 50px; border-radius: 10px; width: 100%; padding: 2%; align-items: center; text-align: center; display: flex; justify-content: center; ">
+                        <%= messages.success %>
+        </div>
+    <% } %>
+</div>
+
+    <form action="/register" method="post" autocomplete="off">
+        <h2>New Account</h2>
+        <div class="inputBox">
+            <input type="text" name="username"  required >
+            <label for="username">Username</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" id="password" required>
+            <label>Create &nbsp Password</label>
+            <img src="/images/hide.png" id="eye">
+        </div>
+        <div class="inputBox">
+            <input type="submit" required>
+        </div>
+        <p>Pehle se banaya hua hai kya?<a href="login">Login</a></p>
+    </form>
+    <script src="/javascripts/registerPage.js"></script>
+</body>
+
+</html>

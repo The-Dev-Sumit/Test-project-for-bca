@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Salsa&family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Salsa&family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Mitr&family=Poppins:wght@500&family=Salsa&family=Yanone+Kaffeesatz:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: 'Carter One';
+}
+
+video{
+    height: 450px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: rgb(7, 7, 7);
+    font-family: 'Carter One';
+    letter-spacing: 2px;
+}
+
+p{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: 'Salsa';
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+strong{
+    color: crimson;
+    font-size: 20px;
+}
+
+@media (max-width: 600px){
+
+    video {
+            height: 450px;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+                .box h1 {
+                    position: absolute;
+                    top: 25px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-size: 30px;
+                    font-family: 'Carter One';
+                }
+
+h2 {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: rgb(7, 7, 7);
+        font-family: 'Carter One';
+        letter-spacing: 2px;
+    }
+
+    p {
+        text-transform: capitalize;
+        font-size: 20px;
+        font-family: 'Salsa';
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .elements {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: 40px;
+        margin: 5px;
+    }
+
+    strong {
+        color: crimson;
+        font-size: 20px;
+    }
+
+
+}

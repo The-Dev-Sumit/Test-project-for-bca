@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+
+:root {
+  --clr: greenyellow;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/images/regis.jpg);
+  background-size: cover;
+}
+
+.err_msg{
+  position: absolute;
+  margin-bottom: 40%;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.alert alert-danger{
+  position: absolute;
+  color: #050607;
+  bottom: 80%;
+}
+
+form {
+  background: #29313c;
+  padding: 60px 60px 25px 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+form h2 {
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 0.2;
+  margin-bottom: 45px;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-bottom: 45px;
+}
+
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 4px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #999;
+  outline: none;
+  color: #fdfdfc;
+  font-size: 1.1em;
+  letter-spacing: 0.15em;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: cadetblue;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.inputBox label span {
+  position: relative;
+  display: inline-flex;
+  letter-spacing: .05em;
+  transition: .2s ease-in-out;
+}
+
+.inputBox input:focus~label span,
+.inputBox input:valid~label span{
+  color: var(--clr);
+  letter-spacing: .15em;
+  transform: translateY(-30px);
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  border-bottom: 2px solid var(--clr);
+}
+
+img{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+.inputBox input[type="submit"] {
+  background: var(--clr);
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: .5s;
+  color: darkgreen;
+}
+
+.inputBox input[type="submit"]:hover {
+  letter-spacing: .40em;
+}
+
+form p {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+form p a {
+  color: #FF8080;
+  letter-spacing: .1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 600px){
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url(/images/blur-2583881_1920.jpg);
+      background-size: cover;
+    }
+
+
+
+}
