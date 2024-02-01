@@ -175,3 +175,9 @@ if (testKey === 202) {
 document.querySelectorAll("#a").addEventListener("click",() => {
     window.location.href = "/overview/no-content";
 });
+
+mongodb+srv://sumitp4365:<b1M1ABsBJ7wWfrPw>@cluster0.0mo34gl.mongodb.net/?retryWrites=true&w=majority
+b1M1ABsBJ7wWfrPw
+
+cloudflare
+cloudflared tunnel --url http://localhost:3000

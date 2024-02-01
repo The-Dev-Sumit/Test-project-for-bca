@@ -203,7 +203,6 @@ function showScore() {
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextBtn.innerHTML = "Start Again";
     nextBtn.style.display = "block";
-    start.style.display = "block";  // Show the "Start" button again
 }
 
 function handleNextButton() {

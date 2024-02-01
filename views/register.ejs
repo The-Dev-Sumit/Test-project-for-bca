@@ -10,20 +10,6 @@
 </head>
 
 <body>
-    <div class="err_msg">
-    <!-- register.ejs -->
-    <% if (messages.error) { %>
-        <div id="errorShow" class="alert alert-danger" style="background-color: aliceblue; height: 50px;
-  border-radius: 10px; width: 100%; padding: 2%; align-items: center; text-align: center; display: flex; justify-content: center; ">
-            <%= messages.error %>
-        </div>
-        <% } else { %>
-        <div id="noError" class="alert alert-success"
-            style="background-color: aliceblue; height: 50px; border-radius: 10px; width: 100%; padding: 2%; align-items: center; text-align: center; display: flex; justify-content: center; ">
-                        <%= messages.success %>
-        </div>
-    <% } %>
-</div>
 
     <form action="/register" method="post" autocomplete="off">
         <h2>New Account</h2>
